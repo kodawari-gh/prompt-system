@@ -1,5 +1,5 @@
 'use strict';
-// Todo Runner dashboard. Vanilla JS; all text goes through textContent, never innerHTML.
+// Prompt System dashboard. Vanilla JS; all text goes through textContent, never innerHTML.
 
 // ---------- helpers ----------
 const h = (tag, attrs, ...kids) => {
@@ -77,7 +77,7 @@ function renderSide() {
   const ar = activeRun();
   const open = S.todo.tasks.filter((t) => t.status === 'open' && t.tag === 'auto').length;
   side.replaceChildren(
-    h('div', { class: 'brand' }, h('i', { class: ar ? 'live' : '' }), 'Todo Runner'),
+    h('div', { class: 'brand' }, h('i', { class: ar ? 'live' : '' }), 'Prompt System'),
     h('div', {},
       h('div', { class: 'label' }, 'Project'),
       S.cfg.projects.length

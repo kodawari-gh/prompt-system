@@ -1,5 +1,5 @@
 'use strict';
-// Todo Runner dashboard server. Zero dependencies. Binds to 127.0.0.1 only.
+// Prompt System dashboard server. Zero dependencies. Binds to 127.0.0.1 only.
 const http = require('http');
 const fs = require('fs');
 const os = require('os');
@@ -323,7 +323,7 @@ async function handle(req, res) {
 }
 
 http.createServer((req, res) => { handle(req, res); }).listen(PORT, '127.0.0.1', () => {
-  console.log(`Todo Runner dashboard: http://localhost:${PORT}`);
+  console.log(`Prompt System dashboard: http://localhost:${PORT}`);
   if (!cfg.claudeBin) console.log('warning: claude executable not found; set it in Settings');
   if (!cfg.bashBin) console.log('warning: Git Bash not found; set it in Settings');
 });

@@ -1,5 +1,5 @@
 {
-  "name": "todo-runner",
+  "name": "prompt-system",
   "version": "0.1.0",
   "private": true,
   "description": "Dashboard and runner that works a TODO list one fresh Claude session per task.",
